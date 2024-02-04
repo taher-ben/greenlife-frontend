@@ -1,6 +1,6 @@
 /* Start Variables */
 :root {
-    --main-color: #d22d28;
+    --main-color: #7fa365;
     --main-padding-top: 100px;
     --main-padding-bottom: 100px;
     --section-background: #ececec;
@@ -91,7 +91,7 @@ body {
     border-radius: 5px;
 }
 .main-continer .login button:hover{
-    background-color: #d22d28;
+    background-color: #7fa365;
     color: #ececec;
     border-color: transparent;
 }
