@@ -33,7 +33,7 @@ window.onload = function () {
             'header_link_9': "Contact Us",
             // end header
             // start footer
-            'co_name': "Amaq Al-Dauleya For Oil Services",
+            'co_name': "Green Life Company",
             'footer_link_4': "contact us",
             'footer_link_5': "Hai Alandalus , Tripoli ,Libya",
             'footer_link_6': "Working hours from 8 AM to 4 PM ",
@@ -48,8 +48,8 @@ window.onload = function () {
             's_line5': 'Amaq Al-Dauleya Company Highlights its Modern and Environmental Technologies at Libya Energy and Economy Summit',
             // end slider
             // start video
-            'video_h': 'Amaq Al-Dauleya For Oil Services',
-            'video_p': 'Amaq Al-Dauleya for Oil Services" is one of the largest companies operating in its field. It was established in 2022 as a private company within the private sector, with a capital of up to ten million Libyan Dinars. Its main headquarters is located in the city of Tripoli. The company specializes in providing high-quality services to public companies and institutions operating in the fields of oil, gas, and their derivatives. The company offers a wide range of services, including the maintenance and cleaning of tanks and pipelines, as well as production units in fields and refineries. Additionally, the company collects, cleans, and processes all oil losses resulting from exploration, drilling, and maintenance operations, including residues and liquids produced from production operations and others.',
+            'video_h': 'Green Life Company',
+            'video_p': 'Green Life Company" is one of the largest companies operating in its field. It was established in 2022 as a private company within the private sector, with a capital of up to ten million Libyan Dinars. Its main headquarters is located in the city of Tripoli. The company specializes in providing high-quality services to public companies and institutions operating in the fields of oil, gas, and their derivatives. The company offers a wide range of services, including the maintenance and cleaning of tanks and pipelines, as well as production units in fields and refineries. Additionally, the company collects, cleans, and processes all oil losses resulting from exploration, drilling, and maintenance operations, including residues and liquids produced from production operations and others.',
             // end video
             // start iso
             'iso_1': 'ISO 45001:2018 Certificate:',
@@ -146,7 +146,7 @@ window.onload = function () {
             // end visian page
             // start word page
             'word_h2': 'General Manager Vision',
-            'word_p': `Our vision at Amaq Al-Dauleya For Oil Services is to continue growing and expanding in the oil industries sector relying on modern technologies and maintaining the highest safety standards. The Amaq team consists of highly efficient and experienced individuals to achieve the company's goals, implement its strategy, and achieve the highest possible ethical standards. Amaq is characterized by strong and wise management capable of understanding the sector's needs and a staff with extensive scientific and professional experience that works tirelessly to provide services that meet the internationally recognized quality management system to meet customer aspirations and gain their trust to become the leading Amaq company at the local and regional levels in its field. The company relies on continuous improvement and development of its services, believing that keeping up and developing are the keys to success, and leading to building an exemplary relationship with its customers and achieving the deserved status among major local and global companies as the most important provider of oil industry services locally and regionally`,
+            'word_p': `Our vision at Green Life Company is to continue growing and expanding in the oil industries sector relying on modern technologies and maintaining the highest safety standards. The Amaq team consists of highly efficient and experienced individuals to achieve the company's goals, implement its strategy, and achieve the highest possible ethical standards. Amaq is characterized by strong and wise management capable of understanding the sector's needs and a staff with extensive scientific and professional experience that works tirelessly to provide services that meet the internationally recognized quality management system to meet customer aspirations and gain their trust to become the leading Amaq company at the local and regional levels in its field. The company relies on continuous improvement and development of its services, believing that keeping up and developing are the keys to success, and leading to building an exemplary relationship with its customers and achieving the deserved status among major local and global companies as the most important provider of oil industry services locally and regionally`,
             // end word page
             // start land page news
             'head_news': 'Company News',
@@ -320,7 +320,7 @@ window.onload = function () {
         if (icon) {
             icon.addEventListener('click', function () {
                 if(currentLanguage === 'ar'){
-                    company_name.innerText = ' Amaq Al-Dauleya For Oil Services ';
+                    company_name.innerText = ' Green Life Company ';
                 }else{
                     company_name.innerText = ' أعماق الدولية للخدمات النفطية';
                 }
