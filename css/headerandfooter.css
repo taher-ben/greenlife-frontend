@@ -140,7 +140,9 @@ ul {
     width: 30%;
     padding: 10px;
 }
-
+.navbar .list-two{
+    margin: auto 0 ;
+}
 .navbar .navbar-nav .nav-link {
     color: rgb(0, 0, 0);
     padding: 4px 10px;
@@ -364,7 +366,7 @@ ul {
 .head-page .container h2 {
     font-size: 35px;
     font-weight: bolder;
-    color: var(--main-color);
+    color: white;
     position: absolute;
     top: 25%;
 }

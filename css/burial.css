@@ -21,3 +21,67 @@
 .content .text .content-text{
     line-height: 1.8;
 }
+
+/* strat ser  */
+
+.ser{
+    padding-top:40px ;
+    /* direction: rtl; */
+    overflow: hidden;
+}
+.ser .box{
+    overflow: hidden;
+    position: relative;
+}
+.ser .image{
+    max-width: 100%;
+}
+.ser .image img {
+    padding: 0;
+    width: 100%;
+    transition: 1s;
+
+}
+
+.ser .box:before{
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);   
+}
+.ser .box:hover .image img{
+    transform: rotate(0deg) scale(1.1);
+}
+.ser .box .text{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    right: 10px;
+    left: 20px;
+    top: 80%;
+}
+
+.ser .box .text h5{
+    padding: 0 5px;
+    /* font-size: 12px; */
+    color: white;
+}
+.ser .box .text h5::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\F101";
+    font-weight: 900;
+    margin-left: 5px;
+    color: var(--main-color);
+    transition: 1s;
+}
+.ser .box:hover .text h5::after{
+    margin-left: 10px;
+}
+.ser .box .text i{
+    color: white;
+}
+/* end ser  */

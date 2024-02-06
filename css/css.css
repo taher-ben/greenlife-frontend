@@ -106,22 +106,24 @@ ul {
         height: 50px;
     }
 }
+.header .down-menu:after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f0d7";
+    font-weight:600;
+    margin-left: 10px;
+    color: var(--main-color);
 
+}
 .header .main-nav {
+    padding-bottom: 0;
+    padding-left: 0px !important;
     display: flex;
 }
-
 @media (max-width: 767px) {
     .header .main-nav {
         margin: auto;
     }
 }
-
-/* .header .main-nav>li:hover .mega-menu {
-    opacity: 1;
-    z-index: 100;
-    top: calc(100% + 1px);
-} */
 
 .header .main-nav>li>a {
     display: flex;
@@ -139,10 +141,9 @@ ul {
 
 @media (max-width: 767px) {
     .header .main-nav>li>a {
-        padding: 10px;
-        font-size: 14px;
+        padding: 5px;
+        font-size: 12px;
         height: 40px;
-        
     }
 }
 
@@ -157,18 +158,18 @@ ul {
     transition: var(--main-transition);
 }
 
-.header .main-nav>li>a:hover {
+/* .header .main-nav>li>a:hover {
     color: var(--main-color);
     background-color: #fafafa;
-}
+} */
 
 .header .main-nav>li>a:hover::before {
     left: 0;
 }
 .header .mega {
     position: absolute;
-    width: 100%;
-    left: 0;
+    /* width: 100%; */
+    /* left: 0; */
     padding: 30px;
     background-color: white;
     border-bottom: 3px solid var(--main-color);
@@ -285,7 +286,8 @@ ul {
 }
 
 .header .mega .links {
-    min-width: 250px;
+    padding-left: 0px;
+    /* min-width: 100px; */
     flex: 1;
 }
 

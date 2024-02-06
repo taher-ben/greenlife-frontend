@@ -15,11 +15,12 @@
 
 .articles .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 40px;
 }
 
 .articles .box {
+    position: relative; /* تأكد من أن العنصر .box يحتوي على موقع نسبي لضبط حجم ال iframe */
     box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
     background-color: white;
     border-radius: 6px;
@@ -29,6 +30,15 @@
     justify-content: space-between;
     transition: transform var(--main-transition), box-shadow var(--main-transition);
 }
+
+.articles .box iframe {
+    position: absolute; /* جعل الإطار يحتوي على موقع مطلق ليمتد على كامل العنصر .box */
+    top: 0;
+    left: 0;
+    width: 100%; /* جعل العرض يمتد على كامل العنصر .box */
+    height: 100%; /* جعل الارتفاع يمتد على كامل العنصر .box */
+}
+
 
 .articles .box:hover {
     transform: translateY(-10px);
