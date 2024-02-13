@@ -1,0 +1,144 @@
+/* Start Variables */
+:root {
+    --main-color: #AECC53;
+    --second-color: #2b2d39;
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+    --main-transition: 0.3s;
+    --section-background: #ececec;
+}
+/* start global rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eeee;
+    font-family: 'Merriweather', serif;
+}
+
+ul {
+    list-style: none;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* end global rules */
+
+/* start slider  */
+.main-slider .slider-container {
+    width: 100%;
+    max-height: 50vh;
+    overflow: hidden;
+}
+
+.main-slider .slider-container .slider {
+    width: fit-content;
+    height: max-content;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.main-slider .slider-container .slide {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.main-slider .slider-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-slider .slider-container .slide-caption{
+    z-index: 2;
+}
+
+.main-slider .controls {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #dad8cc;
+}
+
+.main-slider .controls button {
+    position: relative;
+    font-weight: bold;
+    color: #00353E;
+    padding: 0 25px;
+    border: none;
+    background-color: transparent;
+}
+
+.main-slider .controls button:not(:last-child):not(:first-child)::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 20px;
+    background-color: #00353E;
+    z-index: 1;
+}
+
+.main-slider .controls button:not(:last-child):not(:first-child)::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 20px;
+    background-color: #00353E;
+    z-index: 1;
+}
+
+/* end slider */
+/* start container */
+.text-contianer .ntb{
+    font-size: 14px;
+    position: relative;
+    color: var(--main-color);
+    padding: 10px 30px;
+    border: 2px solid #00771a;
+    width: fit-content;
+    border-radius:35px;
+    text-decoration: none;
+}
+.text-contianer .ntb::after{
+    content: '\f054';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    transition: 0.3s;
+    position: absolute;
+    right: 15px;
+}
+.text-contianer .ntb:hover::after{
+    right: 10px;
+}
+/* end container */
