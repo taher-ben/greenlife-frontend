@@ -7,6 +7,7 @@
     --main-transition: 0.3s;
     --section-background: #ececec;
 }
+
 /* start global rules */
 * {
     -webkit-box-sizing: border-box;
@@ -30,6 +31,7 @@ body {
 ul {
     list-style: none;
 }
+
 /* Small */
 @media (min-width: 768px) {
     .container {
@@ -50,16 +52,28 @@ ul {
         width: 1170px;
     }
 }
+
 /* end global rules */
 
 /* start slider  */
 .main-slider .slider-container {
     width: 100%;
+    position: relative;
     max-height: 50vh;
     overflow: hidden;
 }
 
+/* .main-slider .slider-container::after{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+} */
 .main-slider .slider-container .slider {
+    position: relative;
     width: fit-content;
     height: max-content;
     display: flex;
@@ -76,8 +90,46 @@ ul {
     height: 100%;
     object-fit: cover;
 }
-.main-slider .slider-container .slide-caption{
-    z-index: 2;
+
+.main-slider .slider-container .slide-caption {
+    top: 20vh;
+    position: absolute;
+    color: white;
+    padding: 0 85px;
+    align-items: flex-start;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.main-slider .slider-container .slide-caption h6 {
+
+    font-weight: 100;
+
+}
+
+.main-slider .slider-container .slide-caption h3 {
+    color: var(--main-color);
+
+}
+
+.main-slider .slider-container .slide-caption p {
+    font-weight: bolder;
+}
+
+.main-slider .slider-container .slide-caption a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: bolder;
+}
+
+.main-slider .slider-container .slide-caption a::after {
+    content: '\f054';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    padding: 0 3px;
 }
 
 .main-slider .controls {
@@ -120,17 +172,22 @@ ul {
 
 /* end slider */
 /* start container */
-.text-contianer .ntb{
+.text-contianer{
+    margin: 100px 0 100px;
+    
+}
+.text-contianer .ntb {
     font-size: 14px;
     position: relative;
     color: var(--main-color);
     padding: 10px 30px;
     border: 2px solid #00771a;
     width: fit-content;
-    border-radius:35px;
+    border-radius: 35px;
     text-decoration: none;
 }
-.text-contianer .ntb::after{
+
+.text-contianer .ntb::after {
     content: '\f054';
     font-family: "Font Awesome 5 Free";
     font-weight: 600;
@@ -138,7 +195,137 @@ ul {
     position: absolute;
     right: 15px;
 }
-.text-contianer .ntb:hover::after{
+
+.text-contianer .ntb:hover::after {
     right: 10px;
 }
+
 /* end container */
+
+/* start parts  */
+.parts {
+    display: grid;
+    grid-row-gap:5px ;
+}
+
+.parts .part-one {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48vw, 1fr));
+    grid-column-gap: 5px; 
+}
+.parts .box-one {
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.parts .box-one .image {
+    width: 100%;
+    height: 100%;
+    background-image: url(../media/career.png);
+    background-size: cover;
+    transition: transform 3s ease;
+    z-index: 11;
+}
+
+.parts .box-one:hover .image {
+    transform: scale(1.1);
+}
+
+
+.parts .part-one .text{
+    position: absolute;
+    color: white;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 10px;
+}
+.parts .part-one .text h6{
+    padding: 5px 10px;
+    width: fit-content;
+    color: var(--second-color);
+    background-color: var(--main-color);
+}
+.parts .part-one .box-two {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+    grid-column-gap: 5px; 
+}
+
+.parts .part-one .box-two .item {
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+}
+.parts .part-one .box-two .item .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 10px;
+    z-index: 30;
+}
+.parts .part-one .box-two .item .image{
+    position: absolute;
+    top: 0;
+    background-image: url(../media/padma.jpg);
+    transition: transform 3s ease;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.parts .part-one .box-two .item:hover .image{
+    transform: scale(1.1);
+}
+
+/* start part two */
+.parts .part-two {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48vw, 1fr));
+    grid-column-gap: 5px; 
+}
+.parts .box-two {
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.parts .box-two .image {
+    width: 100%;
+    height: 100%;
+
+    background-image: url(../media/career.png);
+    background-size: cover;
+    transition: transform 3s ease;
+    z-index: 11;
+}
+.parts .part-one .box-two .item:hover .image{
+    transform: scale(1.1);
+}
+
+.parts .part-two .text{
+    position: absolute;
+    color: white;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 10px;
+}
+
+.parts .part-two .text h6{
+    padding: 5px 10px;
+    width: fit-content;
+    color: var(--second-color);
+    background-color: var(--main-color);
+}
+/* end parts  */
