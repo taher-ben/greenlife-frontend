@@ -329,3 +329,80 @@ ul {
     background-color: var(--main-color);
 }
 /* end parts  */
+/* start email-us */
+.email-us{
+    margin:50px 0;
+    /* height: 50vh; */
+    overflow: hidden;
+}
+@media (max-width:779px) {
+    .email-us .email{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.email-us .image img{
+
+}
+.email-us .content{
+    display: block;
+    padding: 30px 25px ;
+    min-height: 50vh;
+
+    background-color: #2d4156;
+}
+.email-us .content .text{
+    margin: auto 0;
+}
+.email-us .content .text h4{
+    color: white;
+    font-weight: bold;
+}
+.email-us .content .text .one{
+    color: var(--main-color);
+    font-size: 35px;
+    padding-top: 20px;
+    font-weight: bolder;
+}
+.email-us .content .text .two{
+    color: #AECC53;
+    font-size: 25px;
+    margin: 20px 0;
+}
+.email-us .content .text form{
+    padding: 50px 0;
+}
+.email-us .content .text form input{
+    padding: 10px 15px;
+    width: 50%;
+    outline: none;
+}
+.email-us .content .text form button{
+    font-size: 14px;
+    background-color:transparent;
+    position: relative;
+    color: var(--main-color);
+    padding: 10px 30px;
+    border: 2px solid #00771a;
+    width: fit-content;
+    border-radius: 35px;
+    text-decoration: none;
+}
+/* end email-us */
+/* start footer  */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+footer a:hover {
+    color: #ccc;
+}
+/* end footer  */
